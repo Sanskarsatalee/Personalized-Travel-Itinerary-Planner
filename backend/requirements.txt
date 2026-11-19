@@ -1,0 +1,22 @@
+# ==============================================================================
+# Personalized Travel Itinerary Planner - Backend Dependencies
+# ==============================================================================
+
+# Web Framework & Server Gateway
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# Data Validation, Schema Enforcement & Settings
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
+python-dotenv>=1.0.1
+
+# HTTP Clients for Asynchronous Networking
+httpx>=0.28.0
+requests>=2.32.0
+
+# Database & Supabase Authentication Integration
+supabase>=2.10.0
+
+# Generative AI SDK (Official Google GenAI SDK for Gemini API)
+google-genai>=1.0.0
