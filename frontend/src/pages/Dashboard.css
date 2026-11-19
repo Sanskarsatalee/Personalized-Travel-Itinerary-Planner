@@ -1,0 +1,215 @@
+.dashboard-page {
+  padding-bottom: 3rem;
+}
+
+/* 1. Welcome Banner */
+.dashboard-welcome-banner {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5F7F4 100%);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-welcome-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--color-primary);
+}
+
+.welcome-text-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+}
+
+.welcome-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-primary);
+  background-color: var(--color-primary-subtle);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  width: fit-content;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.welcome-tag-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(30, 63, 32, 0.2);
+}
+
+.welcome-heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+.welcome-subtext {
+  font-size: 0.94rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.welcome-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.welcome-action-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverted);
+  padding: 0.75rem 1.35rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(30, 63, 32, 0.22);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.welcome-action-primary:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(30, 63, 32, 0.3);
+}
+
+.welcome-action-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.welcome-action-secondary:hover {
+  background-color: var(--color-bg);
+  border-color: var(--color-sage);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dashboard-welcome-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .welcome-heading {
+    font-size: 1.45rem;
+  }
+
+  .welcome-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .welcome-action-primary,
+  .welcome-action-secondary {
+    justify-content: center;
+  }
+}
+
+/* ==============================================================================
+   Search Results View
+   ============================================================================== */
+
+.search-results-header {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.search-results-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.search-results-icon {
+  color: var(--color-primary);
+}
+
+.search-results-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+}
+
+.search-query-highlight {
+  color: var(--color-primary);
+}
+
+.search-results-meta {
+  font-size: 0.86rem;
+  color: var(--color-text-secondary);
+  margin-left: calc(22px + 0.75rem); /* align under heading */
+}
+
+.no-results-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.no-results-icon-box {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.no-results-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.no-results-body {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  max-width: 380px;
+}

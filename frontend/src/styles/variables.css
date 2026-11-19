@@ -1,0 +1,78 @@
+/* ==============================================================================
+   Personalized Travel Itinerary Planner - Design System Variables & Tokens
+   Theme: Premium Light Travel (Warm Ivory, Forest Green, Sage, Muted Gold)
+   ============================================================================== */
+
+:root {
+  /* Color Palette - Core Theme */
+  --color-bg: #FBFBF9;               /* Warm Ivory Background */
+  --color-bg-alt: #F4F3EE;           /* Slightly deeper warm neutral */
+  --color-surface: #FFFFFF;          /* Pure White for Cards & Surfaces */
+  --color-surface-hover: #FDFCFA;    /* Subtle hover tint */
+
+  /* Primary Brand: Forest Green */
+  --color-primary: #1E3F20;          /* Deep Forest Green */
+  --color-primary-light: #2A562D;    /* Vibrant Forest Green */
+  --color-primary-dark: #142B16;     /* Dark Evergreen */
+  --color-primary-subtle: rgba(30, 63, 32, 0.08); /* Soft primary tint */
+  --color-primary-border: rgba(30, 63, 32, 0.18);
+
+  /* Secondary Brand: Sage Green */
+  --color-sage: #8FA382;             /* Sage Green */
+  --color-sage-light: #B4C4AB;       /* Soft Light Sage */
+  --color-sage-subtle: rgba(143, 163, 130, 0.16);
+
+  /* Accent Brand: Muted Gold / Brass */
+  --color-gold: #D4AF37;             /* Muted Classic Gold */
+  --color-gold-light: #EAD07C;       /* Soft Champagne Gold */
+  --color-gold-subtle: rgba(212, 175, 55, 0.14);
+
+  /* Typography Colors */
+  --color-text-primary: #1C241E;     /* Dark Charcoal with hint of forest */
+  --color-text-secondary: #586358;   /* Balanced Muted Green-Gray */
+  --color-text-muted: #8A948A;       /* Subtle meta text */
+  --color-text-inverted: #FFFFFF;    /* Text on dark surfaces */
+
+  /* Borders & Dividers */
+  --color-border: #E8E6DF;           /* Subtle warm border */
+  --color-border-subtle: #F0EFE9;   /* Very light divider */
+  --color-border-focus: #1E3F20;     /* Focused element outline */
+
+  /* Status Colors */
+  --color-status-success: #2E7D32;
+  --color-status-success-bg: #E8F5E9;
+  --color-status-warning: #ED6C02;
+  --color-status-warning-bg: #FFF4E5;
+  --color-status-info: #0288D1;
+  --color-status-info-bg: #E1F5FE;
+
+  /* Typography Families */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+
+  /* Elevation Shadows (Soft & Layered) */
+  --shadow-xs: 0 1px 2px rgba(28, 36, 30, 0.03);
+  --shadow-sm: 0 2px 6px rgba(28, 36, 30, 0.04), 0 1px 2px rgba(28, 36, 30, 0.02);
+  --shadow-md: 0 6px 16px -2px rgba(28, 36, 30, 0.06), 0 2px 6px -1px rgba(28, 36, 30, 0.03);
+  --shadow-lg: 0 14px 30px -4px rgba(28, 36, 30, 0.08), 0 4px 10px -2px rgba(28, 36, 30, 0.03);
+  --shadow-hover: 0 18px 36px -6px rgba(30, 63, 32, 0.12), 0 6px 14px -3px rgba(30, 63, 32, 0.06);
+
+  /* Corner Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Layout Constants */
+  --sidebar-width: 272px;
+  --sidebar-collapsed-width: 80px;
+  --header-height: 76px;
+  --content-max-width: 1440px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 320ms cubic-bezier(0.16, 1, 0.3, 1);
+}
